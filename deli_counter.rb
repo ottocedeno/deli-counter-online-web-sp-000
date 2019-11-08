@@ -1,11 +1,6 @@
 # Write your code here.
-require 'pry'
-
-test_line = ["Otto", "Indy", "Mac"]
-test_line2 = []
-
 def line(deli_line)
-  if deli_line.size > 0
+  if deli_line.size > 0 # try #empty? method next time!
     current_line = deli_line.each_with_index.map {| guest, index | "#{index+ 1}. #{guest}"}
     puts "The line is currently: " + current_line.join(" ")
   else
@@ -26,6 +21,3 @@ def now_serving(deli_line)
     return deli_line
   end
 end
-
-
-now_serving(test_line2)
